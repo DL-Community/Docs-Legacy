@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>跳舞的线：社区版 Wiki</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <meta name="description" content="跳舞的线：社区版 官方Wiki">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="icon" href="/lib/img/dlce.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/lib/img/dlce.png" type="image/x-icon"/>
+
+
+    <!-- https://jhildenbiddle.github.io/docsify-themeable/#/themes -->
+    <!-- Theme: Simple (light + dark) -->
+    <link rel="stylesheet" href="lib/css/styles.css">
+    <link rel="stylesheet" href="lib/css/icon-grid.css">
+    <link rel="stylesheet" href="lib/css/grid.css">
+    <link rel="stylesheet" href="lib/css/breadcrumb.css">
+    <link rel="stylesheet" href="lib/css/light.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="lib/css/theme-simple.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="lib/css/theme-simple-dark.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: light)" href="lib/css/prism-light.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="lib/css/prism-dark.css">
+
+    <style media="(prefers-color-scheme: dark)">
+        :root {
+            --base-background-color: rgba(22, 22, 22, 1);
+
+            --hr-border: 1px solid var(--heading-h1-border-color);
+
+            --theme-color: rgba(44, 156, 255, 1);
+            --theme-hue: 325;
+            --theme-lightness: 45%;
+            --link-color: var(--theme-color);
+            --table-row-odd-background: var(--sidebar-background);
+            --code-inline-background: var(--sidebar-border-color);
+            --heading-h1-border-color: rgba(77, 77, 77, 1);
+            --heading-h2-border-color: var(--heading-h1-border-color);
+            --heading-h3-border-color: var(--heading-h1-border-color);
+            --heading-h4-border-color: var(--heading-h1-border-color);
+            --heading-h5-border-color: var(--heading-h1-border-color);
+            --heading-h6-border-color: var(--heading-h1-border-color);
+            --blockquote-background: var(--sidebar-background);
+            --navbar-menu-background: var(--sidebar-border-color);
+            --sidebar-background: rgba(33, 33, 33, 1);
+            --sidebar-toggle-background: var(--sidebar-background);
+            --sidebar-border-color: rgba(55, 55, 55, 1);
+            --search-input-background-color: var(--sidebar-border-color);
+            --search-input-background-color--focus: var(--sidebar-border-color);
+            --search-input-border-color: rgba(55, 55, 55, 1);
+        }
+    </style>
+
+    <style>
+        nav.app-nav li ul {
+            min-width: 150px;
+        }
+
+        :root {
+            --base-font-size: 16px;
+            --link-color: var(--theme-color);
+            --sidebar-width: 22rem;
+            --table-body-border-color: rgba(126, 126, 126, 0.22);
+            --table-head-border-color: var(--table-body-border-color);
+            --table-head-border-width: 0.1rem;
+            --table-body-border-width: var(--table-head-border-width);
+            --table-cell-border-color: var(--table-body-border-color);
+            --navbar-menu-link-color--hover: var(--theme-color);
+            --navbar-menu-link-color--active: var(--theme-color);
+
+        }
+    </style>
+    <link rel="stylesheet" href="lib/css/docsify-tabs.css">
+
+</head>
+
+<body>
+<div class="center" id="app">Loading...</div>
+<script>
+    window.$docsify = {
+        basePath: '/Docs/',
+        toc: {
+            tocMaxLevel: 5,
+            target: 'h1, h2, h3, h4, h5, h6',
+            ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
+        },
+        alias :{
+           "/" : "/about/home",
+           "/dlce/about" : "/about/home",
+           "/en/" : "en/about/home",
+           "/en/dlce/about" : "en/about/home",
+
+           "/dlce/versions" : "/about/versions",
+           "/dlce/localization" : "/about/localization",
+           "/en/dlce/localization" : "/en/about/localization",
+
+           "/404" : "/_404.md",
+           "/en/404" : "/en/_404.md",
+
+           "/en" : "/en/",
+
+           "/dlce/eula" : "/legal/eula",
+           "/dlce/privacy" : "/legal/privacy",
+           "/dlce/open-source" : "/legal/open-source",
+
+           "/en/dlce/eula" : "/en/legal/eula",
+           "/en/dlce/privacy" : "/en/legal/privacy",
+           "/en/dlce/open-source" : "/en/legal/open-source",
+
+           "/dlce/custom_post_processing" : "/dlce/custom-post-processing/home",
+           "/dlce/custom_post_processing_v2" : "/dlce/custom-post-processing/v2",
+           "/dlce/custom_post_processing_v1" : "/dlce/custom-post-processing/v1",
+           "/dlce/custom_post_processing_legacy" : "/dlce/custom-post-processing/v1",
+        },
+        name: '跳舞的线：社区版 Wiki',
+        nameLink: {
+            '/en': '#/en/about/home',
+            '/': '#/about/home',
+        },
+        homepage: 'home.md',
+        loadSidebar: true,
+        loadNavbar: true,
+        maxLevel: 0,
+        subMaxLevel: 2,
+        sidebarDisplayLevel: 0,
+        topMargin: 50,
+        notFoundPage:
+        {
+            "/": "/404",
+            "/en/": "/en/404",
+        },
+        auto2top: true,
+        fallbackLanguages: ['/',"/en"],
+        search: {
+            maxAge: 86400000,
+            paths: 'auto',
+            placeholder:
+                {
+                    '/en' : 'Search Documentation',
+                    '/' : '搜索文档',
+                },
+            noData:{
+                '/en' : 'No Results',
+                '/' : '找不到结果',
+            },
+            depth: 4,
+            hideOtherSidebarContent: true,
+            pathNamespaces: ['/', '/en'],
+            namespace: '/Docs',
+        },
+        tabs: {
+            sync: true,
+            theme: 'material',
+            tabComments: true,
+        },
+        pagination: {
+            previousText: {
+              '/en/': 'PREVIOUS',
+              '/': '上一文档'
+            },
+            // or
+            nextText: {
+              '/en/': 'NEXT',
+              '/': '下一文档'
+            },
+            crossChapter: true,
+            crossChapterText: true,
+       },
+    }
+</script>
+
+<script src="lib/docsify.min.js"></script>
+<script src="lib/footer-hook.js"></script>
+<script src="lib/plugins/search.min.js"></script>
+<script src="lib/plugins/docsify-themeable.min.js"></script>
+<script src="lib/plugins/emoji.min.js"></script>
+<script src="lib/plugins/zoom-image.min.js"></script>
+<script src="lib/plugins/docsify-copy-code.min.js"></script>
+<script src="lib/plugins/docsify-tabs.js"></script>
+<!--https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-ini.min.js-->
+<script src="lib/plugins/prism-ini.min.js"></script>
+<script src="lib/plugins/prism-json.min.js"></script>
+<script src="lib/plugins/docsify-pagination.min.js"></script>
+<!--script src="lib/plugins/prism-uri.min.js"></script-->
+</body>
+
+</html>
