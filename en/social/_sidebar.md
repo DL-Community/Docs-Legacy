@@ -1,6 +1,5 @@
-- [About](/en/about/home)
+- [Home](/en/about/home)
 - [Documentations](/en/dlce/contents.md)
-
 - [**Social**](/en/social/home.md)
   - [Discord](https://discord.gg/8Ew5n3XadT)
   - [YouTube](https://www.youtube.com/@DLCommunityEdition)

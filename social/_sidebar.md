@@ -1,4 +1,4 @@
-- [关于](/about/home)
+- [首页](/about/home)
 - [游戏文档](/dlce/contents.md)
 
 - [**官方社区**](/social/home.md)

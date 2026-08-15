@@ -1,4 +1,4 @@
-- [About](/en/about/home)
+- [Home](/en/about/home)
 - [Documentations](/en/dlce/contents.md)
 - [Social](/en/social/home.md)
 
