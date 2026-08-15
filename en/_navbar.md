@@ -2,6 +2,7 @@
 - [Docs](/en/dlce/contents.md)
 - More
   - [Legal](/en/legal/eula.md)
+  - [Main Site](https://dl-community.github.io)
   - [Sponsor](https://github.com/sponsors/Aaron8052)
 - ![en](https://img.shields.io/badge/lang-English-blue.svg)
   - <a href="#/about/home" target="_blank">![zh-cn](https://img.shields.io/badge/语言-简体中文-red.svg)</a>

@@ -1,12 +1,77 @@
-**[返回上级](/dlce/custom_post_processing.md)**
+# 自定义后期处理
 
-# 自定义后期处理 V1（旧版）
+<!-- last-modified -->
 
-> **兼容性**<br>DLCE v3.0.1 以下、DLCE 怀旧版
+?> **过时的文档**<br>Post-Processing V1 将在未来的版本移除支持，此文档现不再维护。推荐使用 [V2 版本](/dlce/custom-post-processing/v2.md)。
 
-?> 该版本的自定义后期处理与[ V1 新版](/dlce/custom_post_processing_v1.md)无实际差异，仅文件路径、文件名有区别。
+<!-- tabs:start -->
+<!-- tab:新版 -->
+### 新版 :id=New
 
-## **制作配置文件**
+> **兼容性**<br>DLCE v3.0.1 及以上
+
+?> DLCE v3.0.1 以下版本和 DLCE 怀旧版不兼容此版本。文档请参考<a href="#/dlce/custom-post-processing/v1#legacy" target="_blank">旧版</a>。
+
+## 制作配置文件
+- [加入QQ群](https://qm.qq.com/q/wlrTgLHAHI)在群文件中寻找自定义后处理的配置文件模板；
+- 在其基础上修改数值后并**导入对应的路径中**即可；
+- [配置文件内的各项配置描述在这里](#配置文件介绍)；
+- 配置完毕后，继续阅读下文将文件重命名并导入至游戏。
+
+## 导入配置文件
+  <!-- tabs:start -->
+  <!-- tab:Windows -->
+### Windows 路径
+- 前往游戏安装目录（安装时指定的路径）。
+- 后期处理配置文件保存在
+
+```directory
+Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号.bytes
+```
+
+  <!-- tab:iOS -->
+### iOS 路径
+- 打开“文件”app，找到“我的iPhone”
+- 后期处理配置文件保存在
+
+```directory
+跳舞的线/Custom/PostProcessing/关卡代号.txt
+```
+
+  <!-- tab:iPad -->
+### iPad 路径
+- 打开“文件”app，找到“我的iPad”
+- 后期处理配置文件保存在
+
+```directory
+跳舞的线/Custom/PostProcessing/关卡代号.txt
+```
+
+  <!-- tab:iOS on Mac -->
+### iOS on Mac 路径
+- 打开 Finder 访达，按下 `Command + Shift + G`，输入下列路径并回车：
+
+````directory
+~/Library/Containers
+````
+
+- 找到游戏文件夹，进入 `Data/Documents` 文件夹。
+- 后期处理配置文件保存在
+
+```directory
+Custom/PostProcessing/关卡代号.txt
+```
+
+  <!-- tabs:end -->
+
+<!-- tab:旧版 -->
+### 旧版 :id=Legacy
+
+> **兼容性**<br>DLCE v3.0.0 ～ v1.2.9、DLCE 怀旧版
+
+?> 该版本的自定义后期处理与<a href="#/dlce/custom-post-processing/v1#new" target="_blank">新版</a>无实际差异，仅文件路径、文件名有区别。
+
+## 制作配置文件
 - [加入QQ群](https://qm.qq.com/q/wlrTgLHAHI)在群文件中寻找自定义后处理的配置文件模板；
 - 在其基础上修改数值后并**导入对应的路径中**即可；
 - [配置文件内的各项配置描述在这里](#配置文件介绍)；
@@ -21,6 +86,8 @@
 Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号/postprofile.bytes
 ```
 
+<!-- tabs:end -->
+
 ### 注意事项
 
 - 其中 `关卡代号` 用于指定该配置将会用于哪一个关卡。比如，将 `关卡代号` 替换为 `Taurus`，则游戏会将你的配置文件应用在**金牛座**关卡中。
@@ -32,7 +99,7 @@ Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号/postprofile.by
 
 - Profile中每一个不同的特效的配置都会使用 {} 进行包括，例如下文中被{}包括的内容则是与antialiasing有关的配置参数
 
-````json
+```json
       "antialiasing": {
         "m_Enabled": false,
         "m_Settings": {
@@ -48,7 +115,7 @@ Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号/postprofile.by
           }
         }
       },
-````
+```
 
 ### 通用配置项
 
@@ -56,27 +123,35 @@ Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号/postprofile.by
 
 - `m_Enabled`：每一个特效配置中都有此配置项，用于控制是否开启该特效。`true` 为开启，`false` 为关闭
 
+```json
       "m_Enabled": false,
+```
 
 #### m_Settings
 
 - `m_Settings`：每一个特效配置中都有此配置项，用于调整该特效的具体参数（只有 `m_Enabled` 为 `true` 时才会生效）
 
+```json
       "m_Settings": {
          ...
       }
+```
 
 #### intensity
 
 - `intensity`：位于 `m_Settings` 中，大部分特效配置都有此配置项，用于调整该特效的强度
 
+```json
       "intensity": 1.0,
+```
 
 #### radius
 
 - `radius`：位于 `m_Settings` 中，大部分特效配置都有此配置项，用于调整该特效的影响范围
 
+```json
       "radius": 0.3,
+```
 
 ### 效果配置项
 
@@ -251,8 +326,7 @@ Dancing Line/Dancing Line_Data/Custom/PostProcessing/关卡代号/postprofile.by
 <blockquote>
 
 **相关文档**
-- [自定义后期处理 > V2](/dlce/custom_post_processing_v2.md)
-- [自定义后期处理 > V1（新版）](/dlce/custom_post_processing_v1.md)
+- [自定义后期处理 > V2](/dlce/custom-post-processing/v2.md)
 - [游戏设置 > 画质](/dlce/game-settings.md#画质)
 - [关卡信息](/dlce/level_information.md)
 

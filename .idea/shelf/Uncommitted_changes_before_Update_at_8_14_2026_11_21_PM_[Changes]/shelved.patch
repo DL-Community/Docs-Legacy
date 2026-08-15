@@ -1,0 +1,292 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"zh-cn\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>跳舞的线：社区版 Wiki（旧版）</title>\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\"/>\r\n\r\n    <meta name=\"description\" content=\"跳舞的线：社区版 官方Wiki（旧版）\">\r\n\r\n    <meta name=\"viewport\"\r\n          content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\r\n\r\n    <link rel=\"icon\" href=\"/lib/img/dlce.png\" type=\"image/x-icon\"/>\r\n    <link rel=\"shortcut icon\" href=\"/lib/img/dlce.png\" type=\"image/x-icon\"/>\r\n\r\n\r\n    <!-- https://jhildenbiddle.github.io/docsify-themeable/#/themes -->\r\n    <!-- Theme: Simple (light + dark) -->\r\n    <link rel=\"stylesheet\" href=\"lib/css/styles.css\">\r\n    <link rel=\"stylesheet\" href=\"lib/css/icon-grid.css\">\r\n    <link rel=\"stylesheet\" href=\"lib/css/grid.css\">\r\n    <link rel=\"stylesheet\" href=\"lib/css/breadcrumb.css\">\r\n    <link rel=\"stylesheet\" href=\"lib/css/light.css\">\r\n    <link rel=\"stylesheet\" media=\"(prefers-color-scheme: light)\" href=\"lib/css/theme-simple.css\">\r\n    <link rel=\"stylesheet\" media=\"(prefers-color-scheme: dark)\" href=\"lib/css/theme-simple-dark.css\">\r\n    <link rel=\"stylesheet\" media=\"(prefers-color-scheme: light)\" href=\"lib/css/prism-light.css\">\r\n    <link rel=\"stylesheet\" media=\"(prefers-color-scheme: dark)\" href=\"lib/css/prism-dark.css\">\r\n\r\n    <style media=\"(prefers-color-scheme: dark)\">\r\n        :root {\r\n            --base-background-color: rgba(22, 22, 22, 1);\r\n\r\n            --hr-border: 1px solid var(--heading-h1-border-color);\r\n\r\n            --theme-color: rgba(44, 156, 255, 1);\r\n            --theme-hue: 325;\r\n            --theme-lightness: 45%;\r\n            --link-color: var(--theme-color);\r\n            --table-row-odd-background: var(--sidebar-background);\r\n            --code-inline-background: var(--sidebar-border-color);\r\n            --heading-h1-border-color: rgba(77, 77, 77, 1);\r\n            --heading-h2-border-color: var(--heading-h1-border-color);\r\n            --heading-h3-border-color: var(--heading-h1-border-color);\r\n            --heading-h4-border-color: var(--heading-h1-border-color);\r\n            --heading-h5-border-color: var(--heading-h1-border-color);\r\n            --heading-h6-border-color: var(--heading-h1-border-color);\r\n            --blockquote-background: var(--sidebar-background);\r\n            --navbar-menu-background: var(--sidebar-border-color);\r\n            --sidebar-background: rgba(33, 33, 33, 1);\r\n            --sidebar-toggle-background: var(--sidebar-background);\r\n            --sidebar-border-color: rgba(55, 55, 55, 1);\r\n            --search-input-background-color: var(--sidebar-border-color);\r\n            --search-input-background-color--focus: var(--sidebar-border-color);\r\n            --search-input-border-color: rgba(55, 55, 55, 1);\r\n        }\r\n    </style>\r\n\r\n    <style>\r\n        nav.app-nav li ul {\r\n            min-width: 150px;\r\n        }\r\n\r\n        :root {\r\n            --base-font-size: 16px;\r\n            --link-color: var(--theme-color);\r\n            --sidebar-width: 22rem;\r\n            --table-body-border-color: rgba(126, 126, 126, 0.22);\r\n            --table-head-border-color: var(--table-body-border-color);\r\n            --table-head-border-width: 0.1rem;\r\n            --table-body-border-width: var(--table-head-border-width);\r\n            --table-cell-border-color: var(--table-body-border-color);\r\n            --navbar-menu-link-color--hover: var(--theme-color);\r\n            --navbar-menu-link-color--active: var(--theme-color);\r\n\r\n        }\r\n    </style>\r\n    <link rel=\"stylesheet\" href=\"lib/css/docsify-tabs.css\">\r\n\r\n</head>\r\n\r\n<body>\r\n<div class=\"center\" id=\"app\">Loading...</div>\r\n<script>\r\n    window.$docsify = {\r\n        basePath: '/Docs-Legacy/',\r\n        toc: {\r\n            tocMaxLevel: 5,\r\n            target: 'h1, h2, h3, h4, h5, h6',\r\n            ignoreHeaders:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']\r\n        },\r\n        alias :{\r\n           \"/\" : \"/about/home\",\r\n           \"/dlce/about\" : \"/about/home\",\r\n           \"/en/\" : \"en/about/home\",\r\n           \"/en/dlce/about\" : \"en/about/home\",\r\n\r\n           \"/dlce/versions\" : \"/about/versions\",\r\n           \"/dlce/localization\" : \"/about/localization\",\r\n           \"/en/dlce/localization\" : \"/en/about/localization\",\r\n\r\n           \"/404\" : \"/_404.md\",\r\n           \"/en/404\" : \"/en/_404.md\",\r\n\r\n           \"/en\" : \"/en/\",\r\n\r\n           \"/dlce/eula\" : \"/legal/eula\",\r\n           \"/dlce/privacy\" : \"/legal/privacy\",\r\n           \"/dlce/open-source\" : \"/legal/open-source\",\r\n\r\n           \"/en/dlce/eula\" : \"/en/legal/eula\",\r\n           \"/en/dlce/privacy\" : \"/en/legal/privacy\",\r\n           \"/en/dlce/open-source\" : \"/en/legal/open-source\",\r\n\r\n           \"/dlce/custom_post_processing\" : \"/dlce/custom-post-processing/home\",\r\n           \"/dlce/custom_post_processing_v2\" : \"/dlce/custom-post-processing/v2\",\r\n           \"/dlce/custom_post_processing_v1\" : \"/dlce/custom-post-processing/v1\",\r\n           \"/dlce/custom_post_processing_legacy\" : \"/dlce/custom-post-processing/v1\",\r\n        },\r\n        name: '跳舞的线：社区版 Wiki',\r\n        nameLink: {\r\n            '/en': '#/en/about/home',\r\n            '/': '#/about/home',\r\n        },\r\n        homepage: 'home.md',\r\n        loadSidebar: true,\r\n        loadNavbar: true,\r\n        maxLevel: 0,\r\n        subMaxLevel: 2,\r\n        sidebarDisplayLevel: 0,\r\n        topMargin: 50,\r\n        notFoundPage:\r\n        {\r\n            \"/\": \"/404\",\r\n            \"/en/\": \"/en/404\",\r\n        },\r\n        auto2top: true,\r\n        fallbackLanguages: ['/',\"/en\"],\r\n        search: {\r\n            maxAge: 86400000,\r\n            paths: 'auto',\r\n            placeholder:\r\n                {\r\n                    '/en' : 'Search Documentation',\r\n                    '/' : '搜索文档',\r\n                },\r\n            noData:{\r\n                '/en' : 'No Results',\r\n                '/' : '找不到结果',\r\n            },\r\n            depth: 4,\r\n            hideOtherSidebarContent: true,\r\n            pathNamespaces: ['/', '/en'],\r\n            namespace: '/Docs',\r\n        },\r\n        tabs: {\r\n            sync: true,\r\n            theme: 'material',\r\n            tabComments: true,\r\n        },\r\n        pagination: {\r\n            previousText: {\r\n              '/en/': 'PREVIOUS',\r\n              '/': '上一文档'\r\n            },\r\n            // or\r\n            nextText: {\r\n              '/en/': 'NEXT',\r\n              '/': '下一文档'\r\n            },\r\n            crossChapter: true,\r\n            crossChapterText: true,\r\n       },\r\n    }\r\n</script>\r\n\r\n<script src=\"lib/docsify.min.js\"></script>\r\n<script src=\"lib/footer-hook.js\"></script>\r\n<script src=\"lib/plugins/search.min.js\"></script>\r\n<script src=\"lib/plugins/docsify-themeable.min.js\"></script>\r\n<script src=\"lib/plugins/emoji.min.js\"></script>\r\n<script src=\"lib/plugins/zoom-image.min.js\"></script>\r\n<script src=\"lib/plugins/docsify-copy-code.min.js\"></script>\r\n<script src=\"lib/plugins/docsify-tabs.js\"></script>\r\n<!--https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-ini.min.js-->\r\n<script src=\"lib/plugins/prism-ini.min.js\"></script>\r\n<script src=\"lib/plugins/prism-json.min.js\"></script>\r\n<script src=\"lib/plugins/docsify-pagination.min.js\"></script>\r\n<!--script src=\"lib/plugins/prism-uri.min.js\"></script-->\r\n</body>\r\n\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision afcbbbba19e3e43f0319ce8a992b7c9d7728d022)
++++ b/index.html	(date 1786761646702)
+@@ -83,7 +83,52 @@
+ <div class="center" id="app">Loading...</div>
+ <script>
+     window.$docsify = {
+-        basePath: '/Docs-Legacy/',
++        // Keep the legacy shell, but load every Markdown document from the
++        // currently deployed Docs site.
++        basePath: '/Docs/',
++        routerMode: 'hash',
++        routes: {
++            // The current navbar links to section roots. The modern Docs shell
++            // turns those into generated landing pages; the legacy shell uses
++            // the current section sidebar itself as a lightweight landing page.
++            '/(?:[^/]+/)?(?:about|dlce|social|legal)/?': function (sectionPath, matched, next) {
++                var normalizedPath = /\/$/.test(sectionPath) ? sectionPath : sectionPath + '/';
++                var sidebarPath = window.$docsify.basePath.replace(/\/$/, '') + normalizedPath + '_sidebar.md';
++                var sectionKey = normalizedPath.replace(/^\/|\/$/g, '');
++                var sectionTitles = {
++                    'about': '关于',
++                    'dlce': '游戏文档',
++                    'social': '官方社区',
++                    'legal': '法律信息',
++                    'en/about': 'About',
++                    'en/dlce': 'Documentation',
++                    'en/social': 'Social',
++                    'en/legal': 'Legal'
++                };
++                var title = sectionTitles[sectionKey] || sectionKey;
++                var showLoadError = function () {
++                    next('# ' + title + '\n\n无法加载最新版目录，请稍后刷新页面。');
++                };
++
++                if (typeof window.fetch !== 'function') {
++                    showLoadError();
++                    return;
++                }
++
++                fetch(sidebarPath, { cache: 'no-cache' }).then(function (response) {
++                    if (!response.ok) {
++                        showLoadError();
++                        return;
++                    }
++
++                    return response.text().then(function (markdown) {
++                        var isHtmlFallback = /^\s*(?:<!doctype\s+html|<html(?:\s|>))/i.test(markdown);
++                        if (!markdown.trim() || isHtmlFallback) showLoadError();
++                        else next('# ' + title + '\n\n' + markdown);
++                    }, showLoadError);
++                }, showLoadError);
++            }
++        },
+         toc: {
+             tocMaxLevel: 5,
+             target: 'h1, h2, h3, h4, h5, h6',
+@@ -95,9 +140,12 @@
+            "/en/" : "en/about/home",
+            "/en/dlce/about" : "en/about/home",
+ 
+-           "/dlce/versions" : "/about/versions",
+-           "/dlce/localization" : "/about/localization",
+-           "/en/dlce/localization" : "/en/about/localization",
++           // Preserve old Legacy bookmarks while using the current Docs paths.
++           "/about/versions" : "/dlce/versions",
++           "/about/localization" : "/dlce/localization",
++           "/en/about/localization" : "/en/dlce/localization",
++           "/dlce/contents" : "/dlce/versions",
++           "/en/dlce/contents" : "/en/dlce/localization",
+ 
+            "/404" : "/_404.md",
+            "/en/404" : "/en/_404.md",
+@@ -116,6 +164,12 @@
+            "/dlce/custom_post_processing_v2" : "/dlce/custom-post-processing/v2",
+            "/dlce/custom_post_processing_v1" : "/dlce/custom-post-processing/v1",
+            "/dlce/custom_post_processing_legacy" : "/dlce/custom-post-processing/v1",
++           "/dlce/custom-post-processing/legacy" : "/dlce/custom-post-processing/v1",
++
++           "/dlce/game-settings" : "/dlce/settings/general",
++           "/en/dlce/game-settings" : "/en/dlce/settings/general",
++           "/dlce/game-settings-accessibility" : "/dlce/settings/accessibility",
++           "/en/dlce/game-settings-accessibility" : "/en/dlce/settings/accessibility",
+         },
+         name: '跳舞的线：社区版 Wiki',
+         nameLink: {
+@@ -125,6 +179,9 @@
+         homepage: 'home.md',
+         loadSidebar: true,
+         loadNavbar: true,
++        requestHeaders: {
++            'Cache-Control': 'no-cache'
++        },
+         maxLevel: 0,
+         subMaxLevel: 2,
+         sidebarDisplayLevel: 0,
+Index: lib/footer-hook.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Copyright FengYan\r\n\r\nwindow.$docsify.plugins = [\r\n    function(hook) {\r\n        // 判断当前语言\r\n        const match = location.hash.match(/^#\\/([^\\/?#]+)/);\r\n        const lang = match ? match[1] : '';\r\n\r\n        var root = window.$docsify.basePath;\r\n        // 根据语言设置footer文件的path\r\n        if(lang == 'en'){\r\n            var footerPath = root + \"/en/_footer.html\";\r\n        }\r\n        else{\r\n            var footerPath = root + \"/_footer.html\";\r\n        }\r\n        hook.afterEach(function(html, next) {\r\n            fetch(footerPath)\r\n            .then(response => response.text())\r\n            .then(htmlContent => {\r\n                    next(html + htmlContent);\r\n               });\r\n       });\r\n\r\n\r\n    }\r\n    ].concat(window.$docsify.plugins || [])
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/footer-hook.js b/lib/footer-hook.js
+--- a/lib/footer-hook.js	(revision afcbbbba19e3e43f0319ce8a992b7c9d7728d022)
++++ b/lib/footer-hook.js	(date 1786761649633)
+@@ -6,7 +6,7 @@
+         const match = location.hash.match(/^#\/([^\/?#]+)/);
+         const lang = match ? match[1] : '';
+ 
+-        var root = window.$docsify.basePath;
++        var root = window.$docsify.basePath.replace(/\/$/, '');
+         // 根据语言设置footer文件的path
+         if(lang == 'en'){
+             var footerPath = root + "/en/_footer.html";
+@@ -15,7 +15,7 @@
+             var footerPath = root + "/_footer.html";
+         }
+         hook.afterEach(function(html, next) {
+-            fetch(footerPath)
++            fetch(footerPath, { cache: 'no-cache' })
+             .then(response => response.text())
+             .then(htmlContent => {
+                     next(html + htmlContent);
+@@ -24,4 +24,4 @@
+ 
+ 
+     }
+-    ].concat(window.$docsify.plugins || [])
+\ No newline at end of file
++    ].concat(window.$docsify.plugins || [])
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"58a1e0b6-1aea-4c98-a325-01b1ceeff1e1\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/dlce/contents.md\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/en/dlce/contents.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/_sidebar.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/_sidebar.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/dlce/_sidebar.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/dlce/_sidebar.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/dlce/about.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/home.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/dlce/character.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/dlce/character.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/dlce/commands.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/dlce/commands.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/dlce/game-settings.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/dlce/game-settings.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/dlce/level_information.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/dlce/level_information.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/dlce/localization.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/dlce/localization.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/dlce/notes-challenge.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/dlce/notes-challenge.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/dlce/versions.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/dlce/versions.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/en/_sidebar.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/en/_sidebar.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/en/dlce/_sidebar.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/en/dlce/_sidebar.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/en/dlce/about.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/en/home.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/en/dlce/character.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/en/dlce/character.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/en/dlce/commands.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/en/dlce/commands.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/en/legal/_sidebar.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/en/legal/_sidebar.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/legal/_sidebar.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/legal/_sidebar.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/legal/eula.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/legal/eula.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/legal/open-source.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/legal/open-source.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/legal/privacy.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/legal/privacy.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/social/_sidebar.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/social/_sidebar.md\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Aaron8052&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/DL-Community/Docs.git&quot;,\r\n    &quot;accountId&quot;: &quot;ce8c0946-1f81-4ede-a76c-f14d3f2af77a&quot;\r\n  }\r\n}</component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"vcs:///Users/fengyan/Documents/GitHub/Docs/dlce/about.md\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"vcs:///Users/fengyan/Documents/GitHub/Docs/dlce/about.md\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MetaFilesCheckinStateConfiguration\" checkMetaFiles=\"true\" />\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 4\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2dF8qlzi6Vze5d5BzAV724ORHlN\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/jiang/Documents/GitHub/Docs&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"58a1e0b6-1aea-4c98-a325-01b1ceeff1e1\" name=\"Changes\" comment=\"\" />\r\n      <created>1709592659593</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1709592659593</updated>\r\n      <workItem from=\"1709592661865\" duration=\"185000\" />\r\n      <workItem from=\"1745030391084\" duration=\"13918000\" />\r\n      <workItem from=\"1745698347208\" duration=\"1777000\" />\r\n      <workItem from=\"1751593099896\" duration=\"3715000\" />\r\n      <workItem from=\"1752677264150\" duration=\"9968000\" />\r\n      <workItem from=\"1752740311940\" duration=\"1813000\" />\r\n      <workItem from=\"1753189969928\" duration=\"237000\" />\r\n      <workItem from=\"1753190217151\" duration=\"1507000\" />\r\n      <workItem from=\"1753491879587\" duration=\"4231000\" />\r\n      <workItem from=\"1753531480056\" duration=\"9550000\" />\r\n      <workItem from=\"1759701562498\" duration=\"8156000\" />\r\n      <workItem from=\"1760468346815\" duration=\"1163000\" />\r\n      <workItem from=\"1760807053338\" duration=\"162000\" />\r\n      <workItem from=\"1760807220433\" duration=\"2989000\" />\r\n      <workItem from=\"1760810435280\" duration=\"631000\" />\r\n      <workItem from=\"1760815059910\" duration=\"2985000\" />\r\n      <workItem from=\"1760820822621\" duration=\"18000\" />\r\n      <workItem from=\"1760820844194\" duration=\"10000\" />\r\n      <workItem from=\"1760820871178\" duration=\"1243000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"更新3.5版本相关文档\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745036586429</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745036586429</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"-\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745083633718</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745083633718</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"-\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745084424660</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745084424660</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"完善文档\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745088477106</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745088477106</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"-\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745089271812</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745089271812</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"更新游戏设置文档\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745698676285</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745698676285</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"更新游戏设置文档\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745699919586</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745699919586</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"增加自定义后处理枚举值相关的文档\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1751594962196</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1751594962196</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"增加自定义后处理枚举值相关的文档\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1751595025321</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1751595025321</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"更新群规\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1752677686407</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1752677686407</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"增加备案号\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1752680001892</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1752680001892</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"加宽页面\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1752681364246</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1752681364246</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"更新\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1752737862949</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1752737862949</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"-\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1753190242205</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1753190242205</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"footer\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1753495036188</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1753495036188</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"增加开源库公示\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1753533929540</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1753533929540</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"增加开源库公示\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1753534005311</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1753534005311</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"English translations WIP\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1759679411033</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1759679411033</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"-\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1759679636510</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1759679636510</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"-\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1759685093067</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1759685093067</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"优化icon grid样式，增加item选中边框效果\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1759705055264</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1759705055264</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\"css\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1759705538512</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1759705538512</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00023\" summary=\"gap\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1759705690827</created>\r\n      <option name=\"number\" value=\"00023\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1759705690827</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00024\" summary=\"EN sidebar\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1759707171173</created>\r\n      <option name=\"number\" value=\"00024\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1759707171173</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00025\" summary=\"Language Badge\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1760468796339</created>\r\n      <option name=\"number\" value=\"00025\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1760468796339</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00026\" summary=\"体力方块获取方式。\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1760468899975</created>\r\n      <option name=\"number\" value=\"00026\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1760468899975</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00027\" summary=\"navigation\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1760808340241</created>\r\n      <option name=\"number\" value=\"00027\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1760808340241</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00028\" summary=\"navigation\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1760808420843</created>\r\n      <option name=\"number\" value=\"00028\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00028\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1760808420843</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00029\" summary=\"qq\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1760808662287</created>\r\n      <option name=\"number\" value=\"00029\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00029\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1760808662287</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00030\" summary=\"header\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1760809803319</created>\r\n      <option name=\"number\" value=\"00030\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00030\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1760809803319</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00031\" summary=\"-\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1760810060493</created>\r\n      <option name=\"number\" value=\"00031\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00031\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1760810060493</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00032\" summary=\"basePath\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1760810458276</created>\r\n      <option name=\"number\" value=\"00032\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00032\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1760810458276</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00033\" summary=\"nav\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1760816850498</created>\r\n      <option name=\"number\" value=\"00033\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00033\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1760816850498</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"34\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityCheckinConfiguration\" checkUnsavedScenes=\"true\" />\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"false\" />\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n    <MESSAGE value=\"语言\" />\r\n    <MESSAGE value=\"更新3.5版本相关文档\" />\r\n    <MESSAGE value=\"完善文档\" />\r\n    <MESSAGE value=\"更新游戏设置文档\" />\r\n    <MESSAGE value=\"增加自定义后处理枚举值相关的文档\" />\r\n    <MESSAGE value=\"更新群规\" />\r\n    <MESSAGE value=\"增加备案号\" />\r\n    <MESSAGE value=\"加宽页面\" />\r\n    <MESSAGE value=\"更新\" />\r\n    <MESSAGE value=\"footer\" />\r\n    <MESSAGE value=\"增加开源库公示\" />\r\n    <MESSAGE value=\"English translations WIP\" />\r\n    <MESSAGE value=\"优化icon grid样式，增加item选中边框效果\" />\r\n    <MESSAGE value=\"css\" />\r\n    <MESSAGE value=\"gap\" />\r\n    <MESSAGE value=\"EN sidebar\" />\r\n    <MESSAGE value=\"Language Badge\" />\r\n    <MESSAGE value=\"体力方块获取方式。\" />\r\n    <MESSAGE value=\"navigation\" />\r\n    <MESSAGE value=\"qq\" />\r\n    <MESSAGE value=\"header\" />\r\n    <MESSAGE value=\"basePath\" />\r\n    <MESSAGE value=\"basePath\" />\r\n    <MESSAGE value=\"nav\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"nav\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"DotNet_Exception_Breakpoints\">\r\n          <properties exception=\"System.OperationCanceledException\" breakIfHandledByOtherCode=\"false\" displayValue=\"System.OperationCanceledException\" />\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </breakpoint>\r\n        <breakpoint enabled=\"true\" type=\"DotNet_Exception_Breakpoints\">\r\n          <properties exception=\"System.Threading.Tasks.TaskCanceledException\" breakIfHandledByOtherCode=\"false\" displayValue=\"System.Threading.Tasks.TaskCanceledException\" />\r\n          <option name=\"timeStamp\" value=\"2\" />\r\n        </breakpoint>\r\n        <breakpoint enabled=\"true\" type=\"DotNet_Exception_Breakpoints\">\r\n          <properties exception=\"System.Threading.ThreadAbortException\" breakIfHandledByOtherCode=\"false\" displayValue=\"System.Threading.ThreadAbortException\" />\r\n          <option name=\"timeStamp\" value=\"3\" />\r\n        </breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision afcbbbba19e3e43f0319ce8a992b7c9d7728d022)
++++ b/.idea/workspace.xml	(date 1786764115242)
+@@ -3,33 +3,17 @@
+   <component name="AutoImportSettings">
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
++  <component name="CMakeProjectFlavorService">
++    <option name="flavorId" value="CMakePlainProjectFlavor" />
++  </component>
++  <component name="CMakeSettings">
++    <configurations />
++  </component>
+   <component name="ChangeListManager">
+     <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/dlce/contents.md" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/en/dlce/contents.md" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sidebar.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/_sidebar.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/dlce/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/home.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/character.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/commands.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/dlce/game-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/game-settings.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/dlce/level_information.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/level_information.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/dlce/localization.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/localization.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/dlce/notes-challenge.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/notes-challenge.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/dlce/versions.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/versions.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/en/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/_sidebar.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/en/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/_sidebar.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/en/dlce/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/home.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/en/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/character.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/en/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/commands.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/en/legal/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/legal/_sidebar.md" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/legal/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/_sidebar.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/legal/eula.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/eula.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/legal/open-source.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/open-source.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/legal/privacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/privacy.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/social/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/social/_sidebar.md" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/lib/footer-hook.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/footer-hook.js" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -45,6 +29,7 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="RESET_MODE" value="MIXED" />
+   </component>
+   <component name="GitHubPullRequestSearchHistory">{
+   &quot;lastFilter&quot;: {
+@@ -54,7 +39,7 @@
+ }</component>
+   <component name="GithubPullRequestsUISettings">{
+   &quot;selectedUrlAndAccountId&quot;: {
+-    &quot;url&quot;: &quot;https://github.com/DL-Community/Docs.git&quot;,
++    &quot;url&quot;: &quot;https://github.com/DL-Community/Docs-Legacy.git&quot;,
+     &quot;accountId&quot;: &quot;ce8c0946-1f81-4ede-a76c-f14d3f2af77a&quot;
+   }
+ }</component>
+@@ -81,11 +66,15 @@
+   &quot;keyToString&quot;: {
+     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
++    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jiang/Documents/GitHub/Docs&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/molantsing/Documents/GitHub/Docs-Legacy&quot;,
+     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+@@ -121,6 +110,8 @@
+       <workItem from="1760820822621" duration="18000" />
+       <workItem from="1760820844194" duration="10000" />
+       <workItem from="1760820871178" duration="1243000" />
++      <workItem from="1786698915280" duration="47000" />
++      <workItem from="1786699087982" duration="4875000" />
+     </task>
+     <task id="LOCAL-00001" summary="更新3.5版本相关文档">
+       <option name="closed" value="true" />
+@@ -386,7 +377,39 @@
+       <option name="project" value="LOCAL" />
+       <updated>1760816850498</updated>
+     </task>
+-    <option name="localTasksCounter" value="34" />
++    <task id="LOCAL-00034" summary="-">
++      <option name="closed" value="true" />
++      <created>1786698956299</created>
++      <option name="number" value="00034" />
++      <option name="presentableId" value="LOCAL-00034" />
++      <option name="project" value="LOCAL" />
++      <updated>1786698956299</updated>
++    </task>
++    <task id="LOCAL-00035" summary="-">
++      <option name="closed" value="true" />
++      <created>1786699267169</created>
++      <option name="number" value="00035" />
++      <option name="presentableId" value="LOCAL-00035" />
++      <option name="project" value="LOCAL" />
++      <updated>1786699267169</updated>
++    </task>
++    <task id="LOCAL-00036" summary="-">
++      <option name="closed" value="true" />
++      <created>1786699480732</created>
++      <option name="number" value="00036" />
++      <option name="presentableId" value="LOCAL-00036" />
++      <option name="project" value="LOCAL" />
++      <updated>1786699480732</updated>
++    </task>
++    <task id="LOCAL-00037" summary="网站内容与新文档站同步">
++      <option name="closed" value="true" />
++      <created>1786761980912</created>
++      <option name="number" value="00037" />
++      <option name="presentableId" value="LOCAL-00037" />
++      <option name="project" value="LOCAL" />
++      <updated>1786761980912</updated>
++    </task>
++    <option name="localTasksCounter" value="38" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -407,7 +430,6 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+-    <MESSAGE value="语言" />
+     <MESSAGE value="更新3.5版本相关文档" />
+     <MESSAGE value="完善文档" />
+     <MESSAGE value="更新游戏设置文档" />
+@@ -431,7 +453,9 @@
+     <MESSAGE value="basePath" />
+     <MESSAGE value="basePath" />
+     <MESSAGE value="nav" />
+-    <option name="LAST_COMMIT_MESSAGE" value="nav" />
++    <MESSAGE value="-" />
++    <MESSAGE value="网站内容与新文档站同步" />
++    <option name="LAST_COMMIT_MESSAGE" value="网站内容与新文档站同步" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>

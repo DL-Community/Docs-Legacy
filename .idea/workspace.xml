@@ -3,33 +3,61 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="58a1e0b6-1aea-4c98-a325-01b1ceeff1e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dlce/contents.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/en/dlce/contents.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_sidebar.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/en/legal/contents.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/legal/contents.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_404.md" beforeDir="false" afterPath="$PROJECT_DIR$/_404.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/_navbar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/about/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about/home.md" beforeDir="false" afterPath="$PROJECT_DIR$/about/home.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about/localization.md" beforeDir="false" afterPath="$PROJECT_DIR$/about/localization.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about/versions.md" beforeDir="false" afterPath="$PROJECT_DIR$/about/versions.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/home.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/character.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/coins.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/coins.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/commands.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/contents.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/contents.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/V2Template.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/custom-post-processing/V2Template.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/home.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/custom-post-processing/home.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/legacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/custom-post-processing/legacy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/v1.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/custom-post-processing/v1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/custom-post-processing/v2.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/custom-post-processing/v2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dlce/game-settings-accessibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/game-settings-accessibility.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dlce/game-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/game-settings.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dlce/level_information.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/level_information.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/localization.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/localization.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dlce/notes-challenge.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/notes-challenge.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dlce/versions.md" beforeDir="false" afterPath="$PROJECT_DIR$/dlce/versions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/_404.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/_404.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/_navbar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/_navbar.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/en/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/about/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/about/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/about/home.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/about/home.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/about/localization.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/about/localization.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/en/dlce/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/_sidebar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/en/dlce/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/home.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/en/dlce/character.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/character.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/coins.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/coins.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/en/dlce/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/commands.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/contents.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/contents.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/game-settings-accessibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/game-settings-accessibility.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/game-settings.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/game-settings.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/level_information.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/level_information.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/dlce/notes-challenge.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/dlce/notes-challenge.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/en/legal/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/legal/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/legal/open-source.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/legal/open-source.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/legal/privacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/legal/privacy.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/legal/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/_sidebar.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/legal/eula.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/eula.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/legal/open-source.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/open-source.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/legal/privacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/legal/privacy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/share/open-source.md" beforeDir="false" afterPath="$PROJECT_DIR$/share/open-source.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/social/_sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/social/_sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social/home.md" beforeDir="false" afterPath="$PROJECT_DIR$/social/home.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social/qq.md" beforeDir="false" afterPath="$PROJECT_DIR$/social/qq.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social/rules.md" beforeDir="false" afterPath="$PROJECT_DIR$/social/rules.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
